@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SAWO HTML SAMPLE APP</title>
     <link rel="stylesheet" href="assets/login.css" />
   </head>
   <body>
@@ -20,7 +20,9 @@
         identifierType: "email", // can be either 'email' or 'phone_number_sms'
         apiKey: "24cb0394-ac1f-44eb-9e00-7209e7b83f1a", // add your api key here
         onSuccess: (payload) => {
-          document.getElementById("status").innerHTML = "Login Success";
+          console.log(payload);
+          document.getElementById("status").innerHTML =
+            "Login Success <br> User Token : " + payload.token;
         },
       };
       var sawo = new Sawo(config);
