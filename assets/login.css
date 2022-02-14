@@ -26,11 +26,13 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 330px;
+  max-width: 400px;
+  min-height: 400px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid grey;
   background-color: #fff;
+  height : 80%;
   color: #000;
 }
 
@@ -44,6 +46,13 @@ h2 {
 .login-container p {
   padding: 0 10px 0 10px;
   text-align: center;
+}
+
+#status{
+  background-color: #95d995;
+  text-align: center;
+  padding: 10px;
+  color: rgb(44 41 41);
 }
 
 @media (max-width: 400px) {
